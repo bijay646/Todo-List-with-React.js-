@@ -1,0 +1,34 @@
+{
+  "list": [
+    {
+      "id": 98314,
+      "title": "wakeup"
+    },
+    {
+      "id": 15006,
+      "title": "brush teeth"
+    },
+    {
+      "id": 44740,
+      "title": "iron dress"
+    },
+    {
+      "id": 68826,
+      "title": "have breakfast"
+    },
+    {
+      "id": 20688,
+      "title": "go school"
+    }
+  ],
+  "listwork": [
+    {
+      "id": 17802,
+      "title": "schedule meetings"
+    },
+    {
+      "id": 81405,
+      "title": "have lunch"
+    }
+  ]
+}

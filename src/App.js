@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import{BrowserRouter, Routes, Route} from 'react-router-dom'
+import Navigation from './components/Navigation';
+import Work from './components/Work';
+import Home from './components/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navigation />
+      <div className='guidenote'>
+      <p style={{textAlign:'center'}}>Now, make easy notes of the task you need to do . You can choose either the Workplace list or Home list.</p>
+      </div> 
+      <Routes>
+        <Route path="/work" element={<Work />}/>
+        <Route exact path="/" element={<Home/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
+
